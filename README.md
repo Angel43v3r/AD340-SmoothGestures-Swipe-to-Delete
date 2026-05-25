@@ -1,6 +1,10 @@
 # Smooth Gestures with Swipe-to-Delete
-![React Native](https://github.com/Angel43v3r/AD340-SmoothGestures-Swipe-to-Delete/blob/main/SmoothGestures/assets/images/react-logo%403x.png)
-![Expo](https://github.com/Angel43v3r/AD340-SmoothGestures-Swipe-to-Delete/blob/main/SmoothGestures/assets/images/android-icon-foreground.png)
+<img src="https://github.com/Angel43v3r/AD340-SmoothGestures-Swipe-to-Delete/blob/main/SmoothGestures/assets/images/react-logo%403x.png" 
+     alt="Sample App Image Light Mode" 
+     width="200">
+<img src="https://github.com/Angel43v3r/AD340-SmoothGestures-Swipe-to-Delete/blob/main/SmoothGestures/assets/images/android-icon-foreground.png" 
+     alt="Sample App Image Light Mode" 
+     width="200">
 
 ## Assignment 14 - Smooth Gestures with Swipe-to-Delete in Expo
 ### AD340 - Mobile Application Development
