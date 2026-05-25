@@ -4,7 +4,7 @@
      width="200">
 <img src="https://github.com/Angel43v3r/AD340-SmoothGestures-Swipe-to-Delete/blob/main/SmoothGestures/assets/images/android-icon-foreground.png" 
      alt="Sample App Image Light Mode" 
-     width="300">
+     width="200">
 
 ## Assignment 14 - Smooth Gestures with Swipe-to-Delete in Expo
 ### AD340 - Mobile Application Development
