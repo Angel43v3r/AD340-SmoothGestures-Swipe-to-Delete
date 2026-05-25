@@ -1,5 +1,6 @@
 # Smooth Gestures with Swipe-to-Delete
-![React Native]()
+![React Native](https://github.com/Angel43v3r/AD340-SmoothGestures-Swipe-to-Delete/blob/main/SmoothGestures/assets/images/react-logo%403x.png)
+![Expo](https://github.com/Angel43v3r/AD340-SmoothGestures-Swipe-to-Delete/blob/main/SmoothGestures/assets/images/android-icon-foreground.png)
 
 ## Assignment 14 - Smooth Gestures with Swipe-to-Delete in Expo
 ### AD340 - Mobile Application Development
@@ -233,4 +234,4 @@ Date: **May 25, 2026** to **May 31, 2026**
 
 ## License
 
-This project is licensed under the MIT License. Please refer to the [LICENSE](https://github.com/Angel43v3r/AD340-OfflineNotesApp/blob/main/LICENSE) for more details.
+This project is licensed under the MIT License. Please refer to the [LICENSE](https://github.com/Angel43v3r/AD340-SmoothGestures-Swipe-to-Delete/blob/main/LICENSE) for more details.
