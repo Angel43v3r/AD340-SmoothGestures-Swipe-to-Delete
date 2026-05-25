@@ -1,0 +1,1 @@
+# AD340-SmoothGestures-Swipe-to-Delete
