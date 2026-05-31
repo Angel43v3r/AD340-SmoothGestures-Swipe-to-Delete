@@ -1,15 +1,17 @@
-import { Image, KeyboardAvoidingView, Platform, StyleSheet, Text, TextInput, TouchableOpacity, View } from "react-native";
+import { View, Text, TextInput, TouchableOpacity, StyleSheet, KeyboardAvoidingView, Platform } from "react-native";
 import { useRouter } from "expo-router";
 import { useState } from "react";
 
-export default function HomeScreen() {
+export default function SignupScreen() {
     const router = useRouter();
+    const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
+    const [confirmPassword, setConfirmPassword] = useState("");
 
-    const handleLogin = () => {
-        //go to email screen
-        router.replace("/(tabs)/email");
+    const handleSignup = () => {
+        // Go to HomeScreen
+        router.replace("/(tabs)");
     };
 
     return (
@@ -18,15 +20,17 @@ export default function HomeScreen() {
             behavior={Platform.OS === "ios" ? "padding" : "height"}
         >
             <View style={styles.inner}>
-                <View style={styles.titleContainer}>
-                    <Image 
-                    source={require("../../assets/images/SwipeMail.png")}
-                    style={styles.image}
-                />
                 <Text style={styles.title}>SWIPE MAIL</Text>
-                </View>
-                <Text style={styles.subtitle}>Sign in to continue</Text>
+                <Text style={styles.subtitle}>Create an account</Text>
 
+                <TextInput
+                    style={styles.input}
+                    placeholder="Full Name"
+                    placeholderTextColor="#92394A80"
+                    autoCapitalize="words"
+                    value={name}
+                    onChangeText={setName}
+                />
                 <TextInput
                     style={styles.input}
                     placeholder="Email"
@@ -44,19 +48,23 @@ export default function HomeScreen() {
                     value={password}
                     onChangeText={setPassword}
                 />
+                <TextInput
+                    style={styles.input}
+                    placeholder="Confirm Password"
+                    placeholderTextColor="#92394A80"
+                    secureTextEntry
+                    value={confirmPassword}
+                    onChangeText={setConfirmPassword}
+                />
 
-                <TouchableOpacity onPress={() => router.push("/forgotpassword")}>
-                    <Text style={styles.forgotPassword}>Forgot password?</Text>
+                <TouchableOpacity style={styles.signupButton} onPress={handleSignup}>
+                    <Text style={styles.signupButtonText}>CREATE ACCOUNT</Text>
                 </TouchableOpacity>
 
-                <TouchableOpacity style={styles.loginButton} onPress={handleLogin}>
-                    <Text style={styles.loginButtonText}>SIGN IN</Text>
-                </TouchableOpacity>
-
-                <View style={styles.signupRow}>
-                    <Text style={styles.signupText}>Don't have an account? </Text>
-                    <TouchableOpacity onPress={() => router.push("/signup")}>
-                        <Text style={styles.signupLink}>Sign up</Text>
+                <View style={styles.loginRow}>
+                    <Text style={styles.loginText}>Already have an account? </Text>
+                    <TouchableOpacity onPress={() => router.back()}>
+                        <Text style={styles.loginLink}>Sign in</Text>
                     </TouchableOpacity>
                 </View>
             </View>
@@ -68,13 +76,6 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         backgroundColor: "#D1AAB8",
-    },
-    image: {
-        width: 60,
-        height: 60, 
-        resizeMode: 'contain',
-        justifyContent: 'center',
-        alignItems: 'center',
     },
     inner: {
         flex: 1,
@@ -88,12 +89,6 @@ const styles = StyleSheet.create({
         color: "#92394A",
         alignSelf: "center",
         marginBottom: 8,
-    },
-    titleContainer: {
-        flexDirection: 'row',
-        justifyContent: 'center',
-        alignItems: 'center',
-
     },
     subtitle: {
         fontSize: 16,
@@ -116,18 +111,12 @@ const styles = StyleSheet.create({
         shadowOffset: { width: 0, height: 2 },
         elevation: 2,
     },
-    forgotPassword: {
-        color: "#92394A",
-        fontSize: 12,
-        alignSelf: "flex-end",
-        marginBottom: 24,
-        opacity: 0.8,
-    },
-    loginButton: {
+    signupButton: {
         backgroundColor: "#92394A",
         borderRadius: 12,
         paddingVertical: 16,
         alignItems: "center",
+        marginTop: 8,
         marginBottom: 24,
         shadowColor: "#000",
         shadowOpacity: 0.1,
@@ -135,22 +124,22 @@ const styles = StyleSheet.create({
         shadowOffset: { width: 0, height: 2 },
         elevation: 3,
     },
-    loginButtonText: {
+    signupButtonText: {
         color: "#F0C1CC",
         fontWeight: "bold",
         fontSize: 16,
         letterSpacing: 1.5,
     },
-    signupRow: {
+    loginRow: {
         flexDirection: "row",
         justifyContent: "center",
     },
-    signupText: {
+    loginText: {
         color: "#92394A",
         fontSize: 13,
         opacity: 0.8,
     },
-    signupLink: {
+    loginLink: {
         color: "#92394A",
         fontSize: 13,
         fontWeight: "bold",
