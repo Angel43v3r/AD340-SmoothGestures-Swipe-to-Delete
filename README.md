@@ -107,12 +107,15 @@ npx expo start --clear
 
 Next, choose a template, I choose `Default`
 Lastly, name your app
-*Note this will automatically run npm install and install all the needed dependencies for Expo*
+*NOTE: This will automatically run npm install and install all the needed dependencies for Expo*
 
-#### Install package/library:
+#### Required package/library:
 ```bash
 npm install react-native-gesture-handler
+npm install react-native-reanimated
 ```
+
+*NOTE: The package/library above already came pre-installed when you create an Expo project. Check package.json. If it's not installed in your system, go ahead and install them using the command above.*
 
 #### 5. Navigate to the folder
 ```
@@ -144,14 +147,27 @@ You can then choose one of the following options:
 
 ## Assignment Instruction
 
-### Light Mode
-<img src="https://github.com/sampleimage.png" 
-     alt="Sample App Image Light Mode" 
+### App Screenshots
+<imag src="https://github.com/Angel43v3r/AD340-SmoothGestures-Swipe-to-Delete/blob/main/SmoothGestures/assets/images/IMG_3849.png" alt="Loading screen image">
+
+<img src="https://github.com/Angel43v3r/AD340-SmoothGestures-Swipe-to-Delete/blob/main/SmoothGestures/assets/images/IMG_3845.png" 
+     alt="Login screen image" 
      width="300">
 
-### Dark Mode
-<img src="https://github.com/sampleimage.png" 
-     alt="Sample App Image Dark Mode" 
+<img src="https://github.com/Angel43v3r/AD340-SmoothGestures-Swipe-to-Delete/blob/main/SmoothGestures/assets/images/IMG_3846.png" 
+     alt="Sign Up screen image" 
+     width="300">
+
+<img src="https://github.com/Angel43v3r/AD340-SmoothGestures-Swipe-to-Delete/blob/main/SmoothGestures/assets/images/IMG_3847.png" 
+     alt="Forgot Password screen image" 
+     width="300">
+
+<img src="https://github.com/Angel43v3r/AD340-SmoothGestures-Swipe-to-Delete/blob/main/SmoothGestures/assets/images/IMG_3848.png" 
+     alt="Forgot Password screen 2 image" 
+     width="300">
+
+<img src="https://github.com/Angel43v3r/AD340-SmoothGestures-Swipe-to-Delete/blob/main/SmoothGestures/assets/images/IMG_3850.png" 
+     alt="Email screen image" 
      width="300">
 
 ### Requirements
@@ -166,6 +182,8 @@ Utilize `Gesture.Pan()` from the modern `react-native-gesture-handler` API.
 Restrict movement strictly to the horizontal X-axis.
 
 Use `useAnimatedStyle` to smoothly translate the foreground card based on the user's real-time drag distance.
+
+*NOTE: Need to wrap the return with `<GestureHandlerRootView>` when using Gestures in the screen.*
 
 #### 3. Thresholds & Snap Physics
 **Under 40% Width:** If the user releases the card before swiping past `40%` of the screen width, use `withSpring` to snap the card safely back to its initial position (`translateX = 0`).
