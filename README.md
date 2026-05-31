@@ -149,23 +149,18 @@ You can then choose one of the following options:
 
 ### App Screenshots
 <imag src="https://github.com/Angel43v3r/AD340-SmoothGestures-Swipe-to-Delete/blob/main/SmoothGestures/assets/images/IMG_3849.png" alt="Loading screen image">
-
 <img src="https://github.com/Angel43v3r/AD340-SmoothGestures-Swipe-to-Delete/blob/main/SmoothGestures/assets/images/IMG_3845.png" 
      alt="Login screen image" 
      width="300">
-
 <img src="https://github.com/Angel43v3r/AD340-SmoothGestures-Swipe-to-Delete/blob/main/SmoothGestures/assets/images/IMG_3846.png" 
      alt="Sign Up screen image" 
      width="300">
-
 <img src="https://github.com/Angel43v3r/AD340-SmoothGestures-Swipe-to-Delete/blob/main/SmoothGestures/assets/images/IMG_3847.png" 
      alt="Forgot Password screen image" 
      width="300">
-
 <img src="https://github.com/Angel43v3r/AD340-SmoothGestures-Swipe-to-Delete/blob/main/SmoothGestures/assets/images/IMG_3848.png" 
      alt="Forgot Password screen 2 image" 
      width="300">
-
 <img src="https://github.com/Angel43v3r/AD340-SmoothGestures-Swipe-to-Delete/blob/main/SmoothGestures/assets/images/IMG_3850.png" 
      alt="Email screen image" 
      width="300">
